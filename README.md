@@ -1,0 +1,2 @@
+# Steppy
+pedometer app
