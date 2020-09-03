@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		866D560A25013AAC00542283 /* PedometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866D560925013AAC00542283 /* PedometerViewController.swift */; };
 		8687695D24FD3205007E56F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8687695C24FD3205007E56F7 /* AppDelegate.swift */; };
 		8687695F24FD3205007E56F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8687695E24FD3205007E56F7 /* SceneDelegate.swift */; };
 		8687696424FD3205007E56F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8687696224FD3205007E56F7 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		866D560925013AAC00542283 /* PedometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerViewController.swift; sourceTree = "<group>"; };
 		8687695924FD3205007E56F7 /* Steppy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steppy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8687695C24FD3205007E56F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8687695E24FD3205007E56F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		866D560825013A1F00542283 /* Pedometer */ = {
+			isa = PBXGroup;
+			children = (
+				866D560925013AAC00542283 /* PedometerViewController.swift */,
+			);
+			path = Pedometer;
+			sourceTree = "<group>";
+		};
 		8687695024FD3205007E56F7 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 				8687695C24FD3205007E56F7 /* AppDelegate.swift */,
 				8687695E24FD3205007E56F7 /* SceneDelegate.swift */,
 				8687696A24FD3207007E56F7 /* Info.plist */,
+				866D560825013A1F00542283 /* Pedometer */,
 				86FC8A0A24FFCBF700665815 /* Resources */,
 			);
 			path = Steppy;
@@ -264,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				866D560A25013AAC00542283 /* PedometerViewController.swift in Sources */,
 				8687695D24FD3205007E56F7 /* AppDelegate.swift in Sources */,
 				8687695F24FD3205007E56F7 /* SceneDelegate.swift in Sources */,
 			);
