@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Steppy.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

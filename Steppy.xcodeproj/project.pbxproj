@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		860FCE72250FD21900D02D75 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860FCE71250FD21900D02D75 /* RxSwift.framework */; };
+		860FCE73250FD21900D02D75 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 860FCE71250FD21900D02D75 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		866D560A25013AAC00542283 /* PedometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866D560925013AAC00542283 /* PedometerViewController.swift */; };
 		8687695D24FD3205007E56F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8687695C24FD3205007E56F7 /* AppDelegate.swift */; };
 		8687695F24FD3205007E56F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8687695E24FD3205007E56F7 /* SceneDelegate.swift */; };
@@ -34,7 +36,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		860FCE74250FD21900D02D75 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				860FCE73250FD21900D02D75 /* RxSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		860FCE71250FD21900D02D75 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		866D560925013AAC00542283 /* PedometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerViewController.swift; sourceTree = "<group>"; };
 		8687695924FD3205007E56F7 /* Steppy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steppy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8687695C24FD3205007E56F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				860FCE72250FD21900D02D75 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +94,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		860FCE64250FCBA200D02D75 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		860FCE70250FD21900D02D75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				860FCE71250FD21900D02D75 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		866D560825013A1F00542283 /* Pedometer */ = {
 			isa = PBXGroup;
 			children = (
+				860FCE64250FCBA200D02D75 /* Controller */,
 				866D560925013AAC00542283 /* PedometerViewController.swift */,
 			);
 			path = Pedometer;
@@ -91,6 +125,7 @@
 				8687697224FD3207007E56F7 /* SteppyTests */,
 				8687697D24FD3207007E56F7 /* SteppyUITests */,
 				8687695A24FD3205007E56F7 /* Products */,
+				860FCE70250FD21900D02D75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,12 +189,16 @@
 				8687695524FD3205007E56F7 /* Sources */,
 				8687695624FD3205007E56F7 /* Frameworks */,
 				8687695724FD3205007E56F7 /* Resources */,
+				860FCE74250FD21900D02D75 /* Embed Frameworks */,
+				860FCE75250FD24F00D02D75 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Steppy;
+			packageProductDependencies = (
+			);
 			productName = Steppy;
 			productReference = 8687695924FD3205007E56F7 /* Steppy.app */;
 			productType = "com.apple.product-type.application";
@@ -232,6 +271,8 @@
 				Base,
 			);
 			mainGroup = 8687695024FD3205007E56F7;
+			packageReferences = (
+			);
 			productRefGroup = 8687695A24FD3205007E56F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -269,6 +310,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		860FCE75250FD24F00D02D75 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8687695524FD3205007E56F7 /* Sources */ = {
@@ -452,6 +515,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CDDW23M459;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Steppy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,6 +538,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CDDW23M459;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Steppy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
