@@ -2,7 +2,7 @@
 //  SteppyTests.swift
 //  SteppyTests
 //
-//  Created by Motoyuki Ito on 8/31/20.
+//  Created by Motoyuki Ito on 10/5/20.
 //  Copyright © 2020 Moto. All rights reserved.
 //
 
