@@ -27,7 +27,7 @@ jobs:
       # Run build
       - name: Build
         run: xcodebuild
-            -scheme Swift-github-actions
+            -scheme Steppy
             -sdk iphonesimulator
             -configuration Debug
             build
